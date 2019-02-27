@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ProductDetailComponent } from "./ProductDetailComponent";
+import { ProductDetailComponent } from './product-detail.component';
 
 describe('ProductDetailComponent', () => {
   let component: ProductDetailComponent;
@@ -8,7 +8,7 @@ describe('ProductDetailComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ProductDetailComponent]
+      declarations: [ ProductDetailComponent ]
     })
     .compileComponents();
   }));
@@ -19,7 +19,7 @@ describe('ProductDetailComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should be created', () => {
     expect(component).toBeTruthy();
   });
 });
