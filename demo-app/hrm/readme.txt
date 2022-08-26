@@ -1,0 +1,4 @@
+- Create a sample HRM application using angular which I have learned. 
+- Update it time to time
+- First use without backend
+- then add asp.net core backend

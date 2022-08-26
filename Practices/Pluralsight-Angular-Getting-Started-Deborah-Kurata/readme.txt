@@ -1,4 +1,4 @@
-Complete upto: 04.08
+Complete upto: 06.01
 
 Note:
 Upgrade npm - Run the following command
@@ -13,6 +13,11 @@ Upgrade npm - Run the following command
 * Install angular cli globally
 >> npm install -g @angular/cli
 
+* To restart
+>> npm start
+
+* Install bootstrap and font-awesome
+>> npm install bootstrap font-awesome
 
 Output: http://localhost:4200/
 
@@ -22,3 +27,10 @@ Component, Template, Class, Metadata
 Decorator - start with @
 Data binding - {{propertyname}}
 index.html contains the main page for the application
+Back Ticks - `
+
+Inline Template, Linked Template
+fontawesome
+Structural directives
+
+
