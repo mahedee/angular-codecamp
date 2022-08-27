@@ -1,4 +1,4 @@
-Complete upto: 06.01
+Complete upto: 07.01
 
 Note:
 Upgrade npm - Run the following command
@@ -21,6 +21,10 @@ Upgrade npm - Run the following command
 
 Output: http://localhost:4200/
 
+
+Todo:
+1. Create a demo hrm project using angular
+
 Keywords:
 Angular Binding and directives
 Component, Template, Class, Metadata 
@@ -31,6 +35,8 @@ Back Ticks - `
 
 Inline Template, Linked Template
 fontawesome
-Structural directives
+Structural directives, property binding
+Pipes - Transform bound properties before display
+
 
 
