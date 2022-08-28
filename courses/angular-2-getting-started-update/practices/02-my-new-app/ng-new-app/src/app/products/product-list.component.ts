@@ -25,8 +25,11 @@ export class ProductListComponent implements OnInit {
     set listFilter(value: string){
       this._listFilter = value;
       console.log("In setter: ", value);
+
+      this.filteredProducts = this.performFilter(value);
     }
 
+    filteredProducts: IProduct[] = [];
     //products: any[] = [
       products: IProduct[] = [
         {
@@ -51,6 +54,16 @@ export class ProductListComponent implements OnInit {
         }
       ];
 
+      performFilter(filterBy: string) : IProduct[] {
+        filterBy = filterBy.toLocaleLowerCase();
+
+        // Arrow function
+        // If use multiple statement use second bracket
+        return this.products.filter((product: IProduct) =>
+          product.productName.toLocaleLowerCase().includes(filterBy));
+
+      }
+
       toggleImage(): void{
           this.showImage = !this.showImage;
       }
@@ -60,5 +73,9 @@ export class ProductListComponent implements OnInit {
        console.log("Lifecycle hook: In OnInit");
        this.listFilter = 'cart';
         
+      }
+
+      onRatingClicked(message: string): void{
+        this.pageTitle = "Product List: " + message;
       }
 }

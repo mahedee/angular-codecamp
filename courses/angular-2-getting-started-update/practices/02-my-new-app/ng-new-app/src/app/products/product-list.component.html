@@ -40,7 +40,8 @@
                 </tr>
             </thead>
             <tbody>
-                <tr *ngFor='let product of products'>
+                <!-- <tr *ngFor='let product of products'> -->
+            <tr *ngFor = 'let product of filteredProducts'>
                     <td>
                         <!-- show images if showImages value is true -->
                         <img *ngIf="showImage" 
@@ -54,12 +55,16 @@
 
                     <!-- Added build in pipe lowercase -->
                     <!-- Added custom pipe convertToSpaces -->
-                    <td>{{ product.productCode | lowercase | convertToSpaces:'-' }}</td> 
+                    <td>{{ product.productCode | lowercase  | convertToSpaces:'-' }}</td> 
                     <td>{{ product.releaseDate }}</td>
 
                     <!-- Added custom pipe and template expression -->
                     <td>{{ product.price | currency:'USD':'symbol':'1.2-2'}}</td>
-                    <td>{{ product.starRating }}</td>
+                    <!-- <td>{{ product.starRating }}</td> -->
+                    <td>
+                        <app-star [rating]="product.starRating"
+                        (ratingClicked)="onRatingClicked($event)"></app-star>
+                    </td>
 
                 </tr>
             </tbody>

@@ -1,4 +1,4 @@
-Complete upto: 07.06
+Complete upto: 09.01
 
 Note:
 Upgrade npm - Run the following command
@@ -38,7 +38,7 @@ fontawesome
 Structural directives, property binding
 Pipes - Transform bound properties before display
 Component Lifecycle Hooks - most important
-
-
+Arrow function
+Nested component, input decorator, output decorator
 
 
