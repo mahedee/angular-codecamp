@@ -53,7 +53,8 @@
                     <td>{{ product.productName }}</td>
 
                     <!-- Added build in pipe lowercase -->
-                    <td>{{ product.productCode | lowercase}}</td> 
+                    <!-- Added custom pipe convertToSpaces -->
+                    <td>{{ product.productCode | lowercase | convertToSpaces:'-' }}</td> 
                     <td>{{ product.releaseDate }}</td>
 
                     <!-- Added custom pipe and template expression -->

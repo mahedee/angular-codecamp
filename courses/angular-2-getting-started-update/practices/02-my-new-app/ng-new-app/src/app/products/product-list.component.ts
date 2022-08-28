@@ -1,18 +1,34 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
+import {IProduct} from "./product"
 
 @Component({
     selector: "app-products",
-    templateUrl: './product-list.component.html'
+    templateUrl: './product-list.component.html',
+
+    // You can add more stylesheet using commas
+    styleUrls: ["./product-list.component.css"]
 })
 
-export class ProductListComponent{
+export class ProductListComponent implements OnInit {
     pageTitle: string = "Product List";
     imageWidth: number = 50;
     imageMargin: number = 2;
     showImage: boolean = false;
-    listFilter: string = 'cart';
+    //listFilter: string = 'cart';
 
-    products: any[] = [
+    private _listFilter: string = '';
+    
+    get listFilter(): string{
+      return this._listFilter;
+    }
+
+    set listFilter(value: string){
+      this._listFilter = value;
+      console.log("In setter: ", value);
+    }
+
+    //products: any[] = [
+      products: IProduct[] = [
         {
           "productId": 2,
           "productName": "Garden Cart",
@@ -37,5 +53,12 @@ export class ProductListComponent{
 
       toggleImage(): void{
           this.showImage = !this.showImage;
+      }
+
+      // Lifecycle hook
+      ngOnInit(): void{
+       console.log("Lifecycle hook: In OnInit");
+       this.listFilter = 'cart';
+        
       }
 }

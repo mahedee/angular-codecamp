@@ -1,4 +1,4 @@
-Complete upto: 07.01
+Complete upto: 07.06
 
 Note:
 Upgrade npm - Run the following command
@@ -37,6 +37,8 @@ Inline Template, Linked Template
 fontawesome
 Structural directives, property binding
 Pipes - Transform bound properties before display
+Component Lifecycle Hooks - most important
+
 
 
 
