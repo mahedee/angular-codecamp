@@ -1,3 +1,4 @@
+
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
@@ -23,7 +24,8 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/api" 
             ],
             "styles": [
               "src/styles.css"

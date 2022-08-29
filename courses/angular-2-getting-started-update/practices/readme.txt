@@ -1,4 +1,4 @@
-Complete upto: 10.01
+Complete upto: 11.01
 
 Note:
 Upgrade npm - Run the following command
@@ -40,5 +40,6 @@ Pipes - Transform bound properties before display
 Component Lifecycle Hooks - most important
 Arrow function
 Nested component, input decorator, output decorator, Angular Injectors, Root Injector, Component Injector
+Observable and reactive extension
 
 
