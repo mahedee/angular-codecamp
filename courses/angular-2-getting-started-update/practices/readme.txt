@@ -19,6 +19,10 @@ Upgrade npm - Run the following command
 * Install bootstrap and font-awesome
 >> npm install bootstrap font-awesome
 
+* Generate angular component
+>> ng g c products/product-detail --flat  // --flat for no folder
+
+
 Output: http://localhost:4200/
 
 

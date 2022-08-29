@@ -4,7 +4,7 @@ import { IProduct } from "./product"
 import { ProductService } from "./product.service";
 
 @Component({
-  selector: "app-products",
+  //selector: "app-products",
   templateUrl: './product-list.component.html',
 
   // You can add more stylesheet using commas
