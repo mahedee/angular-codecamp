@@ -1,3 +1,5 @@
+// Root application component
+// Run at the time of application load
 import { Component } from "@angular/core";
 
 @Component({
@@ -19,6 +21,9 @@ import { Component } from "@angular/core";
   </div>
   `
 })
+
+// Root application component
+// Run at the time of application load
 export class AppComponent {
   pageTitle: string = "Acme product management";
 }
