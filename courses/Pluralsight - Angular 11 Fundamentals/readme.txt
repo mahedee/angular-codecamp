@@ -1,4 +1,4 @@
-Completed so far - 2.1 - Version check
+Completed so far - 2.8 - Installing Git and Node
 
 
 References:
