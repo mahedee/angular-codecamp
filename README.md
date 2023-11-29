@@ -12,6 +12,7 @@ org/#/).
 - ng lint : run tslint on the application (for code quality checks).
 - ng xi18n : extract i18n messages from source code.
 - npm install -g @angular/cli : Install the CLI using the npm package manager
+- npm install --save bootstrap : Install bootsrap
 
 ## Angular CLI Commands
 - ng new my-project : Create a new Angular application called 'my-project'
