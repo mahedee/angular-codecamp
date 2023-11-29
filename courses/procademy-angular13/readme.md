@@ -1,1 +1,1 @@
-## Complete Up to: Lesson 15 - What is property binding
+## Complete Up to: Lesson 16 - What is event binding
